@@ -99,6 +99,7 @@ Directory-friendly metadata is available in:
 - `mcp.json`
 - `.well-known/mcp.json`
 - `.well-known/mcp/server-card.json`
+- `.well-known/mcp/server.json`
 - `server.json`
 - `smithery.yaml`
 
