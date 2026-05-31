@@ -9,11 +9,16 @@ documentation, OpenAPI, pricing, and enterprise intake surfaces.
 ## What It Exposes
 
 - Tool: `forge_buyer_routes`
+- Tool: `forge_checkout_links`
 - Resource: `forge://buyer-routes`
 - Prompt: `assess_mcp_memory_fit`
 
 The server returns public links only. It does not proxy private customer data,
 store secrets, or expose the private Forge deployment.
+
+`forge_checkout_links` returns the ranked Stripe checkout paths directly so
+agent marketplaces and MCP clients can surface the highest-value paid routes
+without parsing the full buyer-route payload.
 
 ## Public Forge Routes
 
