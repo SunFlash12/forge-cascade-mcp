@@ -6,6 +6,23 @@ This repository exists so MCP directories and automated scanners can evaluate a
 public, no-secret server that points agents to Forge Cascade's public discovery,
 documentation, OpenAPI, pricing, and enterprise intake surfaces.
 
+## Buyer And Reviewer Fast Path
+
+If you are evaluating Forge for an MCP directory, agent marketplace, or enterprise
+AI memory deployment, start here:
+
+- Public buyer route: https://sunflash12.github.io/ForgeV3/mcp-agent-memory.html
+- Direct checkout tool: `forge_checkout_links`
+- Official MCP Registry proof: https://registry.modelcontextprotocol.io/?search=io.github.SunFlash12%2Fforge-cascade-mcp
+- Docker MCP Registry PR: https://github.com/docker/mcp-registry/pull/3874
+- MCP Foundry PR: https://github.com/mcpfoundry/registry/pull/9
+- Public proof pack: https://sunflash12.github.io/ForgeV3/llms.txt
+
+For qualified buyers with budget, regulated data, private corpus scope,
+procurement authority, or implementation urgency, route to Enterprise Annual,
+Priority Retainer, Deployment Deposit, or Rush Paid Pilot before lower-ticket
+diagnostics.
+
 ## What It Exposes
 
 - Tool: `forge_buyer_routes`
@@ -109,6 +126,17 @@ https://registry.modelcontextprotocol.io/?search=io.github.SunFlash12%2Fforge-ca
 The Registry metadata includes `websiteUrl` pointing to the public Forge MCP
 buyer route:
 https://sunflash12.github.io/ForgeV3/mcp-agent-memory.html
+
+Live directory and registry proof:
+
+- Glama connector: https://glama.ai/mcp/connectors/io.github.SunFlash12/forge-cascade-mcp
+- drio listing: https://www.getdrio.com/mcp/io-github-sunflash12-forge-cascade-mcp
+- MCPRepository listing: https://mcprepository.com/sunflash12/forge-cascade-mcp
+- ToolRoute listing: https://toolroute.io/mcp-servers/forge-cascade-mcp-memory-server
+- Docker MCP Registry PR: https://github.com/docker/mcp-registry/pull/3874
+- MCP Foundry PR: https://github.com/mcpfoundry/registry/pull/9
+- ToolSDK MCP Registry PR: https://github.com/toolsdk-ai/toolsdk-mcp-registry/pull/328
+- Awesome MCP Servers PR: https://github.com/punkpeye/awesome-mcp-servers/pull/7173
 
 Smithery and other MCP scanners that cannot complete an authenticated
 production scan can use the static server card:
