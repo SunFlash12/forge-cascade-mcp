@@ -1,29 +1,34 @@
 {
-  "name": "forge-cascade-mcp",
-  "display_name": "Forge Cascade MCP Memory Server",
-  "description": "Public MCP connector for Forge Cascade enterprise AI memory buyer routes.",
-  "repository_url": "https://github.com/SunFlash12/forge-cascade-mcp",
-  "homepage_url": "https://sunflash12.github.io/ForgeV3/mcp-agent-memory.html",
-  "documentation_url": "https://sunflash12.github.io/ForgeV3/mcp.html",
-  "api_reference_url": "https://sunflash12.github.io/ForgeV3/openapi.json",
-  "pricing_url": "https://sunflash12.github.io/ForgeV3/pricing.html",
-  "enterprise_url": "https://sunflash12.github.io/ForgeV3/enterprise.html",
-  "language": "Python",
-  "transport": "stdio",
-  "license": "MIT",
-  "package": {
-    "name": "ghcr.io/sunflash12/forge-cascade-mcp",
-    "type": "docker"
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.sunflash12/forge-cascade-mcp",
+  "title": "Forge Cascade MCP Memory Server",
+  "description": "AI memory buyer routing with Forge docs, pricing, enterprise intake, and MCP discovery.",
+  "version": "0.1.0",
+  "repository": {
+    "url": "https://github.com/SunFlash12/forge-cascade-mcp",
+    "source": "github"
   },
-  "install": {
-    "command": "uvx",
-    "args": [
-      "--from",
-      "git+https://github.com/SunFlash12/forge-cascade-mcp.git",
-      "forge-cascade-mcp"
-    ]
-  },
-  "tools": ["forge_buyer_routes"],
-  "resources": ["forge://buyer-routes"],
-  "prompts": ["assess_mcp_memory_fit"]
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://forgecascade.org/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer token issued by Forge agent registration or enterprise onboarding.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ],
+  "packages": [
+    {
+      "registryType": "oci",
+      "identifier": "ghcr.io/sunflash12/forge-cascade-mcp:v0.1.0",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
 }
