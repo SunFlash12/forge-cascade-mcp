@@ -5,7 +5,7 @@ LABEL org.opencontainers.image.description="Public MCP connector for Forge Casca
 LABEL org.opencontainers.image.source="https://github.com/SunFlash12/forge-cascade-mcp"
 LABEL org.opencontainers.image.url="https://sunflash12.github.io/ForgeV3/mcp-agent-memory.html"
 LABEL org.opencontainers.image.licenses="MIT"
-LABEL io.modelcontextprotocol.server.name="io.github.sunflash12/forge-cascade-mcp"
+LABEL io.modelcontextprotocol.server.name="io.github.SunFlash12/forge-cascade-mcp"
 
 WORKDIR /app
 
