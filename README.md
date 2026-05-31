@@ -24,6 +24,22 @@ store secrets, or expose the private Forge deployment.
 - Pricing: https://sunflash12.github.io/ForgeV3/pricing.html
 - Enterprise: https://sunflash12.github.io/ForgeV3/enterprise.html
 
+## Best Direct Purchase Paths
+
+Use these first for qualified enterprise buyers:
+
+- Forge Enterprise Annual, $120,000/year: https://sunflash12.github.io/ForgeV3/enterprise-annual.html
+  - Stripe checkout: https://buy.stripe.com/8x2fZjfF622r09ZgU708g0c
+- Forge Enterprise Priority Retainer, $25,000/month: https://sunflash12.github.io/ForgeV3/priority-retainer.html
+  - Stripe checkout: https://buy.stripe.com/dRmaEZ9gIdL91e3cDR08g0g
+- Forge Enterprise Deployment Deposit, $25,000 one time: https://sunflash12.github.io/ForgeV3/deployment-deposit.html
+  - Stripe checkout: https://buy.stripe.com/eVqfZjgJa6iH2i733h08g0f
+- Rush Paid Pilot, $5,000 one time: https://sunflash12.github.io/ForgeV3/rush-pilot.html
+  - Stripe checkout: https://buy.stripe.com/6oUbJ3boQ5eD1e39rF08g0d
+
+Use the $99 Context Audit only when a buyer is not ready for pilot or
+enterprise commitment: https://sunflash12.github.io/ForgeV3/context-audit.html
+
 ## Run Locally
 
 ```bash
