@@ -82,6 +82,10 @@ Directory-friendly metadata is available in:
 Official MCP Registry listing:
 https://registry.modelcontextprotocol.io/?search=io.github.SunFlash12%2Fforge-cascade-mcp
 
+The Registry metadata includes `websiteUrl` pointing to the public Forge MCP
+buyer route:
+https://sunflash12.github.io/ForgeV3/mcp-agent-memory.html
+
 ## License
 
 MIT
