@@ -79,6 +79,9 @@ Directory-friendly metadata is available in:
 - `.well-known/mcp.json`
 - `server.json`
 
+Official MCP Registry listing:
+https://registry.modelcontextprotocol.io/?search=io.github.SunFlash12%2Fforge-cascade-mcp
+
 ## License
 
 MIT
