@@ -13,6 +13,10 @@
   "language": "Python",
   "transport": "stdio",
   "license": "MIT",
+  "package": {
+    "name": "ghcr.io/sunflash12/forge-cascade-mcp",
+    "type": "docker"
+  },
   "install": {
     "command": "uvx",
     "args": [

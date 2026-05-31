@@ -59,6 +59,18 @@ Claude Desktop / Cursor-style config:
 }
 ```
 
+## Run With Docker
+
+```bash
+docker run --rm -i ghcr.io/sunflash12/forge-cascade-mcp:latest
+```
+
+MCP Find / directory package metadata:
+
+- Package name: `ghcr.io/sunflash12/forge-cascade-mcp`
+- Package type: Docker
+- Category: `search`
+
 ## Directory Metadata
 
 Directory-friendly metadata is available in:
