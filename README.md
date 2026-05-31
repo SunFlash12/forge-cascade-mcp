@@ -98,7 +98,9 @@ Directory-friendly metadata is available in:
 
 - `mcp.json`
 - `.well-known/mcp.json`
+- `.well-known/mcp/server-card.json`
 - `server.json`
+- `smithery.yaml`
 
 Official MCP Registry listing:
 https://registry.modelcontextprotocol.io/?search=io.github.SunFlash12%2Fforge-cascade-mcp
@@ -106,6 +108,10 @@ https://registry.modelcontextprotocol.io/?search=io.github.SunFlash12%2Fforge-ca
 The Registry metadata includes `websiteUrl` pointing to the public Forge MCP
 buyer route:
 https://sunflash12.github.io/ForgeV3/mcp-agent-memory.html
+
+Smithery and other MCP scanners that cannot complete an authenticated
+production scan can use the static server card:
+https://raw.githubusercontent.com/SunFlash12/forge-cascade-mcp/main/.well-known/mcp/server-card.json
 
 ## License
 

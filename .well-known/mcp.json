@@ -7,6 +7,8 @@
   "documentation": "https://sunflash12.github.io/ForgeV3/mcp.html",
   "api_reference": "https://sunflash12.github.io/ForgeV3/openapi.json",
   "manifest": "https://sunflash12.github.io/ForgeV3/.well-known/mcp.json",
+  "server_card": "https://raw.githubusercontent.com/SunFlash12/forge-cascade-mcp/main/.well-known/mcp/server-card.json",
+  "smithery_config": "https://raw.githubusercontent.com/SunFlash12/forge-cascade-mcp/main/smithery.yaml",
   "pricing": "https://sunflash12.github.io/ForgeV3/pricing.html",
   "enterprise": "https://sunflash12.github.io/ForgeV3/enterprise.html",
   "category": "RAG & Knowledge",
@@ -26,7 +28,7 @@
     ]
   },
   "capabilities": {
-    "tools": ["forge_buyer_routes"],
+    "tools": ["forge_buyer_routes", "forge_checkout_links"],
     "resources": ["forge://buyer-routes"],
     "prompts": ["assess_mcp_memory_fit"]
   }

@@ -1,0 +1,13 @@
+# Smithery configuration file for stdio MCP deployment.
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    properties: {}
+  commandFunction: |-
+    (config) => ({
+      command: 'python',
+      args: ['-m', 'forge_cascade_mcp.server'],
+      env: {}
+    })
+exampleConfig: {}

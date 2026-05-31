@@ -1,0 +1,51 @@
+{
+  "serverInfo": {
+    "name": "Forge Cascade MCP Memory Server",
+    "version": "0.1.5",
+    "title": "Forge Cascade MCP Memory Server",
+    "description": "AI memory buyer routing with Forge docs, pricing, enterprise intake, direct checkout links, and MCP discovery."
+  },
+  "authentication": {
+    "required": true,
+    "schemes": ["bearer"]
+  },
+  "tools": [
+    {
+      "name": "forge_buyer_routes",
+      "description": "Return public Forge Cascade MCP buyer, docs, OpenAPI, pricing, enterprise, and checkout-discovery routes.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {}
+      }
+    },
+    {
+      "name": "forge_checkout_links",
+      "description": "Return ranked Forge Stripe checkout links for qualified enterprise AI memory, private RAG, and MCP buyers.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {}
+      }
+    }
+  ],
+  "resources": [
+    {
+      "uri": "forge://buyer-routes",
+      "name": "Forge buyer routes",
+      "description": "Public Forge buyer routes, direct purchase paths, and agent routing rules.",
+      "mimeType": "application/json"
+    }
+  ],
+  "prompts": [
+    {
+      "name": "assess_mcp_memory_fit",
+      "description": "Assess whether Forge is a fit for an AI agent memory, private RAG, or governed MCP deployment.",
+      "arguments": [
+        {
+          "name": "context",
+          "description": "Deployment context, buyer profile, corpus scope, timeline, risk, or procurement constraints.",
+          "required": false
+        }
+      ]
+    }
+  ]
+}
