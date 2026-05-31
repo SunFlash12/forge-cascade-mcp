@@ -1,9 +1,9 @@
 {
   "serverInfo": {
     "name": "Forge Cascade MCP Memory Server",
-    "version": "0.1.6",
+    "version": "0.1.7",
     "title": "Forge Cascade MCP Memory Server",
-    "description": "AI memory buyer routing with Forge docs, pricing, enterprise intake, paid route recommendations, direct checkout links, and MCP discovery."
+    "description": "AI memory buyer routing with Forge docs, pricing, paid recommendations, and MCP discovery."
   },
   "authentication": {
     "required": true,
