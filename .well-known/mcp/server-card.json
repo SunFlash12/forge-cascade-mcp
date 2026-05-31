@@ -1,9 +1,9 @@
 {
   "serverInfo": {
     "name": "Forge Cascade MCP Memory Server",
-    "version": "0.1.5",
+    "version": "0.1.6",
     "title": "Forge Cascade MCP Memory Server",
-    "description": "AI memory buyer routing with Forge docs, pricing, enterprise intake, direct checkout links, and MCP discovery."
+    "description": "AI memory buyer routing with Forge docs, pricing, enterprise intake, paid route recommendations, direct checkout links, and MCP discovery."
   },
   "authentication": {
     "required": true,
@@ -24,6 +24,31 @@
       "inputSchema": {
         "type": "object",
         "properties": {}
+      }
+    },
+    {
+      "name": "forge_paid_route_for_context",
+      "description": "Recommend the highest-value Forge checkout route from buyer context, budget, urgency, and procurement authority signals.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "buyer_context": {
+            "type": "string",
+            "description": "Buyer intent, corpus, risk, deployment, or procurement context."
+          },
+          "budget_usd": {
+            "type": "integer",
+            "description": "Known buyer budget in USD; use 0 when unknown."
+          },
+          "urgency_days": {
+            "type": "integer",
+            "description": "Days until the buyer needs action; use 0 when unknown."
+          },
+          "has_procurement_authority": {
+            "type": "boolean",
+            "description": "Whether the buyer can approve or influence purchase."
+          }
+        }
       }
     }
   ],

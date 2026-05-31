@@ -4,8 +4,8 @@ build-backend = "hatchling.build"
 
 [project]
 name = "forge-cascade-mcp"
-version = "0.1.5"
-description = "Public MCP connector for Forge Cascade enterprise AI memory buyer and direct checkout routes."
+version = "0.1.6"
+description = "Public MCP connector for Forge Cascade enterprise AI memory buyer routing, paid route recommendations, and direct checkout routes."
 readme = "README.md"
 requires-python = ">=3.10"
 license = "MIT"

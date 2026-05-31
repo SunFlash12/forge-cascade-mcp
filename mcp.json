@@ -29,7 +29,7 @@
     ]
   },
   "capabilities": {
-    "tools": ["forge_buyer_routes", "forge_checkout_links"],
+    "tools": ["forge_buyer_routes", "forge_checkout_links", "forge_paid_route_for_context"],
     "resources": ["forge://buyer-routes"],
     "prompts": ["assess_mcp_memory_fit"]
   }

@@ -2,8 +2,8 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.SunFlash12/forge-cascade-mcp",
   "title": "Forge Cascade MCP Memory Server",
-  "description": "AI memory buyer routing with Forge docs, pricing, enterprise intake, and MCP discovery.",
-  "version": "0.1.5",
+  "description": "AI memory buyer routing with Forge docs, pricing, enterprise intake, paid route recommendations, and MCP discovery.",
+  "version": "0.1.6",
   "websiteUrl": "https://sunflash12.github.io/ForgeV3/mcp-agent-memory.html?utm_source=official_mcp_registry&utm_medium=mcp_registry&utm_campaign=forge_mcp_memory_server",
   "repository": {
     "url": "https://github.com/SunFlash12/forge-cascade-mcp",
@@ -26,7 +26,7 @@
   "packages": [
     {
       "registryType": "oci",
-      "identifier": "ghcr.io/sunflash12/forge-cascade-mcp:v0.1.5",
+      "identifier": "ghcr.io/sunflash12/forge-cascade-mcp:v0.1.6",
       "transport": {
         "type": "stdio"
       }

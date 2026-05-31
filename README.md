@@ -27,6 +27,7 @@ diagnostics.
 
 - Tool: `forge_buyer_routes`
 - Tool: `forge_checkout_links`
+- Tool: `forge_paid_route_for_context`
 - Resource: `forge://buyer-routes`
 - Prompt: `assess_mcp_memory_fit`
 
@@ -36,6 +37,12 @@ store secrets, or expose the private Forge deployment.
 `forge_checkout_links` returns the ranked Stripe checkout paths directly so
 agent marketplaces and MCP clients can surface the highest-value paid routes
 without parsing the full buyer-route payload.
+
+`forge_paid_route_for_context` accepts buyer context, budget, urgency, and
+procurement authority signals, then returns the highest-value recommended
+checkout route plus next-best alternatives. Use it when an agent or directory
+has buyer intent text and needs a direct paid path instead of a generic docs
+link.
 
 ## Public Forge Routes
 
