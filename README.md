@@ -35,6 +35,30 @@ forge-cascade-mcp
 
 The default transport is the MCP SDK's stdio transport.
 
+## Install From GitHub
+
+```bash
+pip install "git+https://github.com/SunFlash12/forge-cascade-mcp.git"
+forge-cascade-mcp
+```
+
+Claude Desktop / Cursor-style config:
+
+```json
+{
+  "mcpServers": {
+    "forge-cascade": {
+      "command": "uvx",
+      "args": [
+        "--from",
+        "git+https://github.com/SunFlash12/forge-cascade-mcp.git",
+        "forge-cascade-mcp"
+      ]
+    }
+  }
+}
+```
+
 ## Directory Metadata
 
 Directory-friendly metadata is available in:

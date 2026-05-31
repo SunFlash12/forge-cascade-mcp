@@ -11,6 +11,14 @@
   "language": "Python",
   "transport": "stdio",
   "license": "MIT",
+  "install": {
+    "command": "uvx",
+    "args": [
+      "--from",
+      "git+https://github.com/SunFlash12/forge-cascade-mcp.git",
+      "forge-cascade-mcp"
+    ]
+  },
   "tools": ["forge_buyer_routes"],
   "resources": ["forge://buyer-routes"],
   "prompts": ["assess_mcp_memory_fit"]
