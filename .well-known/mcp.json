@@ -1,0 +1,21 @@
+{
+  "name": "Forge Cascade MCP Memory Server",
+  "slug": "forge-cascade-mcp-memory-server",
+  "description": "Public MCP connector for Forge Cascade enterprise AI memory buyer routes, RAG context, A2A discovery, docs, OpenAPI, pricing, and enterprise intake.",
+  "repository": "https://github.com/SunFlash12/forge-cascade-mcp",
+  "homepage": "https://sunflash12.github.io/ForgeV3/mcp-agent-memory.html",
+  "documentation": "https://sunflash12.github.io/ForgeV3/mcp.html",
+  "api_reference": "https://sunflash12.github.io/ForgeV3/openapi.json",
+  "manifest": "https://sunflash12.github.io/ForgeV3/.well-known/mcp.json",
+  "pricing": "https://sunflash12.github.io/ForgeV3/pricing.html",
+  "enterprise": "https://sunflash12.github.io/ForgeV3/enterprise.html",
+  "category": "RAG & Knowledge",
+  "language": "Python",
+  "transport": "stdio",
+  "license": "MIT",
+  "capabilities": {
+    "tools": ["forge_buyer_routes"],
+    "resources": ["forge://buyer-routes"],
+    "prompts": ["assess_mcp_memory_fit"]
+  }
+}
