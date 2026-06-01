@@ -16,6 +16,7 @@ AI memory deployment, start here:
 - Official MCP Registry proof: https://registry.modelcontextprotocol.io/?search=io.github.SunFlash12%2Fforge-cascade-mcp
 - Docker MCP Registry PR: https://github.com/docker/mcp-registry/pull/3874
 - MCP Foundry PR: https://github.com/mcpfoundry/registry/pull/9
+- Marketplace launch guide: https://github.com/SunFlash12/forge-cascade-mcp/blob/main/LAUNCHGUIDE.md
 - Public proof pack: https://sunflash12.github.io/ForgeV3/llms.txt
 
 For qualified buyers with budget, regulated data, private corpus scope,
@@ -121,6 +122,7 @@ MCP Find / directory package metadata:
 Directory-friendly metadata is available in:
 
 - `mcp.json`
+- `LAUNCHGUIDE.md`
 - `.well-known/mcp.json`
 - `.well-known/mcp/server-card.json`
 - `.well-known/mcp/server.json`
