@@ -140,6 +140,7 @@ Live directory and registry proof:
 
 - Glama connector: https://glama.ai/mcp/connectors/io.github.SunFlash12/forge-cascade-mcp
 - drio listing: https://www.getdrio.com/mcp/io-github-sunflash12-forge-cascade-mcp
+- MCP Server Hub listing: https://mcpserver.dev/s/forge-cascade-mcp-memory-server_uo525w0
 - MCPRepository listing: https://mcprepository.com/sunflash12/forge-cascade-mcp
 - ToolRoute listing: https://toolroute.io/mcp-servers/forge-cascade-mcp-memory-server
 - Docker MCP Registry PR: https://github.com/docker/mcp-registry/pull/3874

@@ -114,6 +114,7 @@ Best direct purchase paths:
 - Public proof pack: https://sunflash12.github.io/ForgeV3/llms.txt
 - Directory listing JSON: https://sunflash12.github.io/ForgeV3/directory-listing.json
 - Directory submissions pack: https://sunflash12.github.io/ForgeV3/directory-submissions.html
+- MCP Server Hub listing: https://mcpserver.dev/s/forge-cascade-mcp-memory-server_uo525w0
 - Agent install guide: https://github.com/SunFlash12/forge-cascade-mcp/blob/main/llms-install.md
 - Cline MCP Marketplace issue: https://github.com/cline/mcp-marketplace/issues/1701
 - VaultPlane submission proof: accepted June 1, 2026 UTC with id `4b099c0d-203a-4b2d-ad1e-3e91358669a5` and slug `forge-cascade-mcp-memory-server`; public listing is pending review.
