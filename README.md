@@ -13,6 +13,7 @@ AI memory deployment, start here:
 
 - Public buyer route: https://sunflash12.github.io/ForgeV3/mcp-agent-memory.html
 - Direct checkout tool: `forge_checkout_links`
+- Repository LLM guide: https://github.com/SunFlash12/forge-cascade-mcp/blob/main/llms.txt
 - Official MCP Registry proof: https://registry.modelcontextprotocol.io/?search=io.github.SunFlash12%2Fforge-cascade-mcp
 - Docker MCP Registry PR: https://github.com/docker/mcp-registry/pull/3874
 - MCP Foundry PR: https://github.com/mcpfoundry/registry/pull/9
@@ -122,6 +123,7 @@ MCP Find / directory package metadata:
 Directory-friendly metadata is available in:
 
 - `mcp.json`
+- `llms.txt`
 - `LAUNCHGUIDE.md`
 - `.well-known/mcp.json`
 - `.well-known/mcp/server-card.json`

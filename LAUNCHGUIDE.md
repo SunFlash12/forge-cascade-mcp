@@ -112,6 +112,7 @@ Best direct purchase paths:
 ## Review Proof
 
 - Public proof pack: https://sunflash12.github.io/ForgeV3/llms.txt
+- Repository LLM guide: https://github.com/SunFlash12/forge-cascade-mcp/blob/main/llms.txt
 - Directory listing JSON: https://sunflash12.github.io/ForgeV3/directory-listing.json
 - Directory submissions pack: https://sunflash12.github.io/ForgeV3/directory-submissions.html
 - MCP Server Hub listing: https://mcpserver.dev/s/forge-cascade-mcp-memory-server_uo525w0
