@@ -91,6 +91,12 @@ https://sunflash12.github.io/ForgeV3/directory-listing.json
 Directory submission pack:
 https://sunflash12.github.io/ForgeV3/directory-submissions.html
 
+Not Human Search accepted this connector LLM guide, its raw GitHub mirror, the
+Pages proof pack, the gist mirror, and raw gist llms.txt for crawling on June 1,
+2026 UTC. All eight POSTs to https://nothumansearch.ai/api/v1/submit returned
+HTTP 201 submitted for crawling after the guide exposed direct buyer routes and
+the Enterprise Annual Stripe checkout.
+
 ## Review queues
 
 Cline MCP Marketplace issue:
