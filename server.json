@@ -4,7 +4,7 @@
   "title": "Forge Cascade MCP Memory Server",
   "description": "AI memory buyer routing with Forge docs, pricing, paid recommendations, and MCP discovery.",
   "version": "0.1.7",
-  "websiteUrl": "https://sunflash12.github.io/ForgeV3/mcp-agent-memory.html?utm_source=official_mcp_registry&utm_medium=mcp_registry&utm_campaign=forge_mcp_memory_server",
+  "websiteUrl": "https://forgecascade.org/buy?utm_source=official_mcp_registry&utm_medium=mcp_registry&utm_campaign=forge_mcp_memory_server",
   "repository": {
     "url": "https://github.com/SunFlash12/forge-cascade-mcp",
     "source": "github"

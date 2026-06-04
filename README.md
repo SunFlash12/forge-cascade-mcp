@@ -11,14 +11,14 @@ documentation, OpenAPI, pricing, and enterprise intake surfaces.
 If you are evaluating Forge for an MCP directory, agent marketplace, or enterprise
 AI memory deployment, start here:
 
-- Public buyer route: https://sunflash12.github.io/ForgeV3/mcp-agent-memory.html
+- Public buyer route: https://forgecascade.org/buy
 - Direct checkout tool: `forge_checkout_links`
 - Repository LLM guide: https://github.com/SunFlash12/forge-cascade-mcp/blob/main/llms.txt
 - Official MCP Registry proof: https://registry.modelcontextprotocol.io/?search=io.github.SunFlash12%2Fforge-cascade-mcp
 - Docker MCP Registry PR: https://github.com/docker/mcp-registry/pull/3874
 - MCP Foundry PR: https://github.com/mcpfoundry/registry/pull/9
 - Marketplace launch guide: https://github.com/SunFlash12/forge-cascade-mcp/blob/main/LAUNCHGUIDE.md
-- Public proof pack: https://sunflash12.github.io/ForgeV3/llms.txt
+- Public proof pack: https://forgecascade.org/llms.txt
 
 For qualified buyers with budget, regulated data, private corpus scope,
 procurement authority, or implementation urgency, route to Enterprise Annual,
@@ -36,9 +36,10 @@ diagnostics.
 The server returns public links only. It does not proxy private customer data,
 store secrets, or expose the private Forge deployment.
 
-`forge_checkout_links` returns the ranked Stripe checkout paths directly so
-agent marketplaces and MCP clients can surface the highest-value paid routes
-without parsing the full buyer-route payload.
+`forge_checkout_links` returns ranked Forge `/buy/*` checkout routes so agent
+marketplaces and MCP clients can surface the highest-value paid routes without
+parsing the full buyer-route payload. Direct Stripe URLs are exposed only as
+fallback fields.
 
 `forge_paid_route_for_context` accepts buyer context, budget, urgency, and
 procurement authority signals, then returns the highest-value recommended
@@ -48,28 +49,24 @@ link.
 
 ## Public Forge Routes
 
-- Buyer route: https://sunflash12.github.io/ForgeV3/mcp-agent-memory.html
-- MCP manifest: https://sunflash12.github.io/ForgeV3/.well-known/mcp.json
-- MCP docs: https://sunflash12.github.io/ForgeV3/mcp.html
-- OpenAPI: https://sunflash12.github.io/ForgeV3/openapi.json
-- Pricing: https://sunflash12.github.io/ForgeV3/pricing.html
-- Enterprise: https://sunflash12.github.io/ForgeV3/enterprise.html
+- Buyer route: https://forgecascade.org/buy
+- MCP manifest: https://forgecascade.org/.well-known/mcp.json
+- MCP docs: https://forgecascade.org/docs/agents
+- OpenAPI: https://forgecascade.org/openapi.json
+- Pricing: https://forgecascade.org/pricing
+- Enterprise: https://forgecascade.org/enterprise
 
-## Best Direct Purchase Paths
+## Best Route-First Purchase Paths
 
 Use these first for qualified enterprise buyers:
 
-- Forge Enterprise Annual, $120,000/year: https://sunflash12.github.io/ForgeV3/enterprise-annual.html
-  - Stripe checkout: https://buy.stripe.com/8x2fZjfF622r09ZgU708g0c
-- Forge Enterprise Priority Retainer, $25,000/month: https://sunflash12.github.io/ForgeV3/priority-retainer.html
-  - Stripe checkout: https://buy.stripe.com/dRmaEZ9gIdL91e3cDR08g0g
-- Forge Enterprise Deployment Deposit, $25,000 one time: https://sunflash12.github.io/ForgeV3/deployment-deposit.html
-  - Stripe checkout: https://buy.stripe.com/eVqfZjgJa6iH2i733h08g0f
-- Rush Paid Pilot, $5,000 one time: https://sunflash12.github.io/ForgeV3/rush-pilot.html
-  - Stripe checkout: https://buy.stripe.com/6oUbJ3boQ5eD1e39rF08g0d
+- Forge Enterprise Annual, $120,000/year: https://forgecascade.org/buy/enterprise-annual
+- Forge Enterprise Priority Retainer, $25,000/month: https://forgecascade.org/buy/priority-retainer
+- Forge Enterprise Deployment Deposit, $25,000 one time: https://forgecascade.org/buy/launch-pack
+- Rush Paid Pilot, $5,000 one time: https://forgecascade.org/buy/urgent-pilot
 
 Use the $99 Context Audit only when a buyer is not ready for pilot or
-enterprise commitment: https://sunflash12.github.io/ForgeV3/context-audit.html
+enterprise commitment: https://forgecascade.org/buy/context-audit
 
 ## Run Locally
 
@@ -136,7 +133,7 @@ https://registry.modelcontextprotocol.io/?search=io.github.SunFlash12%2Fforge-ca
 
 The Registry metadata includes `websiteUrl` pointing to the public Forge MCP
 buyer route:
-https://sunflash12.github.io/ForgeV3/mcp-agent-memory.html
+https://forgecascade.org/buy
 
 Live directory and registry proof:
 

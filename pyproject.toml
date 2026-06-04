@@ -26,12 +26,12 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://sunflash12.github.io/ForgeV3/mcp-agent-memory.html"
-Documentation = "https://sunflash12.github.io/ForgeV3/mcp.html"
-Manifest = "https://sunflash12.github.io/ForgeV3/.well-known/mcp.json"
-OpenAPI = "https://sunflash12.github.io/ForgeV3/openapi.json"
-Pricing = "https://sunflash12.github.io/ForgeV3/pricing.html"
-Enterprise = "https://sunflash12.github.io/ForgeV3/enterprise.html"
+Homepage = "https://forgecascade.org/buy"
+Documentation = "https://forgecascade.org/docs/agents"
+Manifest = "https://forgecascade.org/.well-known/mcp.json"
+OpenAPI = "https://forgecascade.org/openapi.json"
+Pricing = "https://forgecascade.org/pricing"
+Enterprise = "https://forgecascade.org/enterprise"
 
 [project.scripts]
 forge-cascade-mcp = "forge_cascade_mcp.server:main"
