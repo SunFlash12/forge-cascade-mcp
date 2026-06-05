@@ -103,6 +103,12 @@ Public buyer route:
 https://forgecascade.org/buy
 ```
 
+Machine-readable paid-route router:
+
+```text
+https://forgecascade.org/buy.json
+```
+
 Official MCP Registry proof:
 
 ```text

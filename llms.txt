@@ -82,6 +82,9 @@ https://glama.ai/mcp/connectors/io.github.SunFlash12/forge-cascade-mcp
 Public proof pack:
 https://forgecascade.org/llms.txt
 
+Machine-readable paid-route router:
+https://forgecascade.org/buy.json
+
 Machine-readable listing JSON:
 https://forgecascade.org/directory-listing.json
 
@@ -89,10 +92,10 @@ Directory submission pack:
 https://forgecascade.org/directory-submissions.html
 
 Not Human Search accepted this connector LLM guide, its raw GitHub mirror, the
-Pages proof pack, the gist mirror, and raw gist llms.txt for crawling on June 1,
-2026 UTC. All eight POSTs to https://nothumansearch.ai/api/v1/submit returned
-HTTP 201 submitted for crawling after the guide exposed direct buyer routes and
-the Enterprise Annual checkout path.
+production proof pack, the gist mirror, and raw gist llms.txt for crawling on
+June 1, 2026 UTC. All eight POSTs to https://nothumansearch.ai/api/v1/submit
+returned HTTP 201 submitted for crawling after the guide exposed direct buyer
+routes and the Enterprise Annual checkout path.
 
 ## Review queues
 

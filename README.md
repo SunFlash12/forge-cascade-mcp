@@ -12,6 +12,7 @@ If you are evaluating Forge for an MCP directory, agent marketplace, or enterpri
 AI memory deployment, start here:
 
 - Public buyer route: https://forgecascade.org/buy
+- Machine-readable paid-route router: https://forgecascade.org/buy.json
 - Direct checkout tool: `forge_checkout_links`
 - Repository LLM guide: https://github.com/SunFlash12/forge-cascade-mcp/blob/main/llms.txt
 - Official MCP Registry proof: https://registry.modelcontextprotocol.io/?search=io.github.SunFlash12%2Fforge-cascade-mcp
@@ -50,6 +51,8 @@ link.
 ## Public Forge Routes
 
 - Buyer route: https://forgecascade.org/buy
+- Paid-route router: https://forgecascade.org/buy.json
+- Offers JSON: https://forgecascade.org/offers.json
 - MCP manifest: https://forgecascade.org/.well-known/mcp.json
 - MCP docs: https://forgecascade.org/docs/agents
 - OpenAPI: https://forgecascade.org/openapi.json

@@ -20,7 +20,7 @@
     },
     {
       "name": "forge_checkout_links",
-      "description": "Return ranked Forge Stripe checkout links for qualified enterprise AI memory, private RAG, and MCP buyers.",
+      "description": "Return ranked Forge route-first checkout links for qualified enterprise AI memory, private RAG, and MCP buyers.",
       "inputSchema": {
         "type": "object",
         "properties": {}

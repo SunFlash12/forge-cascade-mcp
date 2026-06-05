@@ -113,6 +113,8 @@ Best direct purchase paths:
 ## Review Proof
 
 - Public proof pack: https://forgecascade.org/llms.txt
+- Paid-route router: https://forgecascade.org/buy.json
+- Offers JSON: https://forgecascade.org/offers.json
 - Repository LLM guide: https://github.com/SunFlash12/forge-cascade-mcp/blob/main/llms.txt
 - Directory listing JSON: https://forgecascade.org/directory-listing.json
 - Directory submissions pack: https://forgecascade.org/directory-submissions.html
