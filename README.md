@@ -11,15 +11,15 @@ documentation, OpenAPI, pricing, and enterprise intake surfaces.
 If you are evaluating Forge for an MCP directory, agent marketplace, or enterprise
 AI memory deployment, start here:
 
-- Public buyer route: https://forgecascade.org/buy
-- Machine-readable paid-route router: https://forgecascade.org/buy.json
+- Public buyer route: https://froggit.ai/buy
+- Machine-readable paid-route router: https://froggit.ai/buy.json
 - Direct checkout tool: `forge_checkout_links`
 - Repository LLM guide: https://github.com/SunFlash12/forge-cascade-mcp/blob/main/llms.txt
 - Official MCP Registry proof: https://registry.modelcontextprotocol.io/?search=io.github.SunFlash12%2Fforge-cascade-mcp
 - Docker MCP Registry PR: https://github.com/docker/mcp-registry/pull/3874
 - MCP Foundry PR: https://github.com/mcpfoundry/registry/pull/9
 - Marketplace launch guide: https://github.com/SunFlash12/forge-cascade-mcp/blob/main/LAUNCHGUIDE.md
-- Public proof pack: https://forgecascade.org/llms.txt
+- Public proof pack: https://froggit.ai/llms.txt
 
 For qualified buyers with budget, regulated data, private corpus scope,
 procurement authority, or implementation urgency, route to Enterprise Annual,
@@ -50,26 +50,26 @@ link.
 
 ## Public Forge Routes
 
-- Buyer route: https://forgecascade.org/buy
-- Paid-route router: https://forgecascade.org/buy.json
-- Offers JSON: https://forgecascade.org/offers.json
-- MCP manifest: https://forgecascade.org/.well-known/mcp.json
-- MCP docs: https://forgecascade.org/docs/agents
-- OpenAPI: https://forgecascade.org/openapi.json
-- Pricing: https://forgecascade.org/pricing
-- Enterprise: https://forgecascade.org/enterprise
+- Buyer route: https://froggit.ai/buy
+- Paid-route router: https://froggit.ai/buy.json
+- Offers JSON: https://froggit.ai/offers.json
+- MCP manifest: https://froggit.ai/.well-known/mcp.json
+- MCP docs: https://froggit.ai/docs/agents
+- OpenAPI: https://froggit.ai/openapi.json
+- Pricing: https://froggit.ai/pricing
+- Enterprise: https://froggit.ai/enterprise
 
 ## Best Route-First Purchase Paths
 
 Use these first for qualified enterprise buyers:
 
-- Forge Enterprise Annual, $120,000/year: https://forgecascade.org/buy/enterprise-annual
-- Forge Enterprise Priority Retainer, $25,000/month: https://forgecascade.org/buy/priority-retainer
-- Forge Enterprise Deployment Deposit, $25,000 one time: https://forgecascade.org/buy/launch-pack
-- Rush Paid Pilot, $5,000 one time: https://forgecascade.org/buy/urgent-pilot
+- Forge Enterprise Annual, $120,000/year: https://froggit.ai/buy/enterprise-annual
+- Forge Enterprise Priority Retainer, $25,000/month: https://froggit.ai/buy/priority-retainer
+- Forge Enterprise Deployment Deposit, $25,000 one time: https://froggit.ai/buy/launch-pack
+- Rush Paid Pilot, $5,000 one time: https://froggit.ai/buy/urgent-pilot
 
 Use the $99 Context Audit only when a buyer is not ready for pilot or
-enterprise commitment: https://forgecascade.org/buy/context-audit
+enterprise commitment: https://froggit.ai/buy/context-audit
 
 ## Run Locally
 
@@ -136,7 +136,7 @@ https://registry.modelcontextprotocol.io/?search=io.github.SunFlash12%2Fforge-ca
 
 The Registry metadata includes `websiteUrl` pointing to the public Forge MCP
 buyer route:
-https://forgecascade.org/buy
+https://froggit.ai/buy
 
 Live directory and registry proof:
 

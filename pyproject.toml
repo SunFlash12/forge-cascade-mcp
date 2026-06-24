@@ -25,13 +25,30 @@ dependencies = [
   "mcp>=1.2.0"
 ]
 
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0",
+  "ruff>=0.6",
+]
+
 [project.urls]
-Homepage = "https://forgecascade.org/buy"
-Documentation = "https://forgecascade.org/docs/agents"
-Manifest = "https://forgecascade.org/.well-known/mcp.json"
-OpenAPI = "https://forgecascade.org/openapi.json"
-Pricing = "https://forgecascade.org/pricing"
-Enterprise = "https://forgecascade.org/enterprise"
+Homepage = "https://froggit.ai/buy"
+Documentation = "https://froggit.ai/docs/agents"
+Manifest = "https://froggit.ai/.well-known/mcp.json"
+OpenAPI = "https://froggit.ai/openapi.json"
+Pricing = "https://froggit.ai/pricing"
+Enterprise = "https://froggit.ai/enterprise"
 
 [project.scripts]
 forge-cascade-mcp = "forge_cascade_mcp.server:main"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W", "B", "UP", "SIM"]
+ignore = ["E501"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -100,13 +100,13 @@ is not ready for a pilot or enterprise route.
 Public buyer route:
 
 ```text
-https://forgecascade.org/buy
+https://froggit.ai/buy
 ```
 
 Machine-readable paid-route router:
 
 ```text
-https://forgecascade.org/buy.json
+https://froggit.ai/buy.json
 ```
 
 Official MCP Registry proof:

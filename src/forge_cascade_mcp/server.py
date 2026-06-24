@@ -8,18 +8,18 @@ from typing import Any
 from mcp.server.fastmcp import FastMCP
 
 
-HOMEPAGE_URL = "https://forgecascade.org/buy"
-MANIFEST_URL = "https://forgecascade.org/.well-known/mcp.json"
-DOCS_URL = "https://forgecascade.org/docs/agents"
-OPENAPI_URL = "https://forgecascade.org/openapi.json"
-PRICING_URL = "https://forgecascade.org/pricing"
-ENTERPRISE_URL = "https://forgecascade.org/enterprise"
-OFFERS_URL = "https://forgecascade.org/offers.json"
-ENTERPRISE_ANNUAL_URL = "https://forgecascade.org/buy/enterprise-annual"
-PRIORITY_RETAINER_URL = "https://forgecascade.org/buy/priority-retainer"
-DEPLOYMENT_DEPOSIT_URL = "https://forgecascade.org/buy/launch-pack"
-RUSH_PILOT_URL = "https://forgecascade.org/buy/urgent-pilot"
-CONTEXT_AUDIT_URL = "https://forgecascade.org/buy/context-audit"
+HOMEPAGE_URL = "https://froggit.ai/buy"
+MANIFEST_URL = "https://froggit.ai/.well-known/mcp.json"
+DOCS_URL = "https://froggit.ai/docs/agents"
+OPENAPI_URL = "https://froggit.ai/openapi.json"
+PRICING_URL = "https://froggit.ai/pricing"
+ENTERPRISE_URL = "https://froggit.ai/enterprise"
+OFFERS_URL = "https://froggit.ai/offers.json"
+ENTERPRISE_ANNUAL_URL = "https://froggit.ai/buy/enterprise-annual"
+PRIORITY_RETAINER_URL = "https://froggit.ai/buy/priority-retainer"
+DEPLOYMENT_DEPOSIT_URL = "https://froggit.ai/buy/launch-pack"
+RUSH_PILOT_URL = "https://froggit.ai/buy/urgent-pilot"
+CONTEXT_AUDIT_URL = "https://froggit.ai/buy/context-audit"
 ENTERPRISE_ANNUAL_CHECKOUT = ENTERPRISE_ANNUAL_URL
 PRIORITY_RETAINER_CHECKOUT = PRIORITY_RETAINER_URL
 DEPLOYMENT_DEPOSIT_CHECKOUT = DEPLOYMENT_DEPOSIT_URL
