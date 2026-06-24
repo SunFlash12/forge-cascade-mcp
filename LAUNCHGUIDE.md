@@ -9,9 +9,9 @@ auto-fills listing details from the repository.
 - Package: `forge-cascade-mcp`
 - Registry id: `io.github.SunFlash12/forge-cascade-mcp`
 - Category: Enterprise AI memory, private RAG, knowledge management
-- Homepage: https://forgecascade.org/buy
-- Documentation: https://forgecascade.org/docs/agents
-- OpenAPI: https://forgecascade.org/openapi.json
+- Homepage: https://froggit.ai/buy
+- Documentation: https://froggit.ai/docs/agents
+- OpenAPI: https://froggit.ai/openapi.json
 - Official MCP Registry: https://registry.modelcontextprotocol.io/?search=io.github.SunFlash12%2Fforge-cascade-mcp
 - Container package: `ghcr.io/sunflash12/forge-cascade-mcp:v0.1.7`
 
@@ -104,20 +104,20 @@ rush pilot paths before lower-ticket diagnostics.
 
 Best direct purchase paths:
 
-- Forge Enterprise Annual, $120,000/year: https://forgecascade.org/buy/enterprise-annual
-- Forge Enterprise Priority Retainer, $25,000/month: https://forgecascade.org/buy/priority-retainer
-- Forge Enterprise Deployment Deposit, $25,000 one time: https://forgecascade.org/buy/launch-pack
-- Rush Paid Pilot, $5,000 one time: https://forgecascade.org/buy/urgent-pilot
-- Context Audit fallback, $99: https://forgecascade.org/buy/context-audit
+- Forge Enterprise Annual, $120,000/year: https://froggit.ai/buy/enterprise-annual
+- Forge Enterprise Priority Retainer, $25,000/month: https://froggit.ai/buy/priority-retainer
+- Forge Enterprise Deployment Deposit, $25,000 one time: https://froggit.ai/buy/launch-pack
+- Rush Paid Pilot, $5,000 one time: https://froggit.ai/buy/urgent-pilot
+- Context Audit fallback, $99: https://froggit.ai/buy/context-audit
 
 ## Review Proof
 
-- Public proof pack: https://forgecascade.org/llms.txt
-- Paid-route router: https://forgecascade.org/buy.json
-- Offers JSON: https://forgecascade.org/offers.json
+- Public proof pack: https://froggit.ai/llms.txt
+- Paid-route router: https://froggit.ai/buy.json
+- Offers JSON: https://froggit.ai/offers.json
 - Repository LLM guide: https://github.com/SunFlash12/forge-cascade-mcp/blob/main/llms.txt
-- Directory listing JSON: https://forgecascade.org/directory-listing.json
-- Directory submissions pack: https://forgecascade.org/directory-submissions.html
+- Directory listing JSON: https://froggit.ai/directory-listing.json
+- Directory submissions pack: https://froggit.ai/directory-submissions.html
 - MCP Server Hub listing: https://mcpserver.dev/s/forge-cascade-mcp-memory-server_uo525w0
 - Agent install guide: https://github.com/SunFlash12/forge-cascade-mcp/blob/main/llms-install.md
 - Cline MCP Marketplace issue: https://github.com/cline/mcp-marketplace/issues/1701
