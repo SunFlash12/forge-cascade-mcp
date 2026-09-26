@@ -1,0 +1,90 @@
+name: Olares MCP commissioning checks
+
+# This temporary lane accepts only an owner-pushed commissioning branch.
+# Public pull requests, main pushes, tags, and dispatches cannot start it.
+on:
+  push:
+    branches:
+      - codex/olares-ci-mcp
+
+permissions:
+  contents: read
+
+concurrency:
+  group: forge-olares-mcp-ci
+  cancel-in-progress: false
+
+jobs:
+  package:
+    if: >-
+      github.event_name == 'push' &&
+      github.repository == 'SunFlash12/forge-cascade-mcp' &&
+      github.ref == 'refs/heads/codex/olares-ci-mcp' &&
+      github.event.deleted == false &&
+      github.sha == github.event.after &&
+      github.workflow_sha == github.sha &&
+      github.workflow_ref == 'SunFlash12/forge-cascade-mcp/.github/workflows/olares-commissioning.yml@refs/heads/codex/olares-ci-mcp'
+    runs-on: forge-olares-mcp-ci
+    timeout-minutes: 15
+    defaults:
+      run:
+        shell: bash
+    env:
+      EXPECTED_SHA: ${{ github.sha }}
+      WORKFLOW_SHA: ${{ github.workflow_sha }}
+      PYTEST_DISABLE_PLUGIN_AUTOLOAD: '1'
+      PYTEST_ADDOPTS: ''
+      PYTEST_PLUGINS: ''
+      PYTHON_DOTENV_DISABLED: '1'
+    steps:
+      - name: Checkout the exact commissioning commit
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          ref: ${{ github.sha }}
+          fetch-depth: 1
+          persist-credentials: false
+      - name: Python 3.11
+        uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6.3.0
+        with:
+          python-version: '3.11'
+      - name: Verify source and runtime
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          import re
+          import subprocess
+          import sys
+          from pathlib import Path
+
+          expected = os.environ['EXPECTED_SHA']
+          event = json.loads(Path(os.environ['GITHUB_EVENT_PATH']).read_text())
+          checks = (
+              sys.version_info[:2] == (3, 11),
+              os.environ['GITHUB_EVENT_NAME'] == 'push',
+              os.environ['GITHUB_REPOSITORY'] == 'SunFlash12/forge-cascade-mcp',
+              os.environ['GITHUB_REF'] == 'refs/heads/codex/olares-ci-mcp',
+              event.get('deleted') is False,
+              event.get('after') == expected,
+              bool(re.fullmatch(r'[0-9a-f]{40}', expected)),
+              os.environ['WORKFLOW_SHA'] == expected,
+              subprocess.check_output(['git', 'rev-parse', 'HEAD'], text=True).strip() == expected,
+          )
+          if not all(checks):
+              raise SystemExit('Commissioning source or runtime guard failed')
+          print(f'Public MCP source: {expected}; Python {sys.version.split()[0]}')
+          PY
+      - name: Install tested check dependencies
+        run: |
+          # Upstream has no lockfile: direct pins are tested, while transitive
+          # and build dependencies still resolve from the public package index.
+          python -m pip --isolated install --index-url https://pypi.org/simple \
+            --disable-pip-version-check --no-input -e . \
+            mcp==1.28.1 pytest==9.0.3 ruff==0.15.20
+          python -m pip check
+      - name: Import, lint, format, and smoke tests
+        run: |
+          python -c 'import forge_cascade_mcp.server; from importlib.metadata import version; print(version("forge-cascade-mcp"))'
+          python -m ruff check src tests
+          python -m ruff format --check src tests
+          python -m pytest tests/test_smoke.py -q

@@ -7,7 +7,6 @@ from typing import Any
 
 from mcp.server.fastmcp import FastMCP
 
-
 HOMEPAGE_URL = "https://froggit.ai/buy"
 MANIFEST_URL = "https://froggit.ai/.well-known/mcp.json"
 DOCS_URL = "https://froggit.ai/docs/agents"
@@ -162,18 +161,24 @@ def _recommend_paid_path(
         return paths[1], reasons
 
     if deployment_fit and (budget_usd >= 25000 or has_procurement_authority):
-        reasons.append("implementation or capacity-reservation language fits the deployment deposit")
+        reasons.append(
+            "implementation or capacity-reservation language fits the deployment deposit"
+        )
         return paths[2], reasons
 
     if budget_usd >= 25000:
-        reasons.append("available budget supports an enterprise deposit or retainer before a low-ticket diagnostic")
+        reasons.append(
+            "available budget supports an enterprise deposit or retainer before a low-ticket diagnostic"
+        )
         return paths[2], reasons
 
     if budget_usd >= 5000 or urgent or pilot_fit or enterprise_fit:
         reasons.append("buyer has urgency, pilot language, or qualified enterprise signals")
         return paths[3], reasons
 
-    reasons.append("insufficient budget, urgency, or procurement signals for pilot or enterprise routing")
+    reasons.append(
+        "insufficient budget, urgency, or procurement signals for pilot or enterprise routing"
+    )
     return paths[4], reasons
 
 
