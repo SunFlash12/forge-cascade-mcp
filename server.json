@@ -1,10 +1,10 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.SunFlash12/forge-cascade-mcp",
-  "title": "Forge Cascade MCP Memory Server",
-  "description": "AI memory buyer routing with Forge docs, pricing, paid recommendations, and MCP discovery.",
+  "title": "Froggit MCP Connector",
+  "description": "Public buyer routes and docs for Froggit, company memory for people and AI by Frowg Systems.",
   "version": "0.1.7",
-  "websiteUrl": "https://froggit.ai/buy?utm_source=official_mcp_registry&utm_medium=mcp_registry&utm_campaign=forge_mcp_memory_server",
+  "websiteUrl": "https://froggit.ai/",
   "repository": {
     "url": "https://github.com/SunFlash12/forge-cascade-mcp",
     "source": "github"
