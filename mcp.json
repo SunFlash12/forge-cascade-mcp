@@ -1,9 +1,9 @@
 {
-  "name": "Forge Cascade MCP Memory Server",
+  "name": "Froggit MCP Connector",
   "slug": "forge-cascade-mcp-memory-server",
-  "description": "Public MCP connector for Forge Cascade enterprise AI memory buyer routes, RAG context, A2A discovery, docs, OpenAPI, pricing, and enterprise intake.",
+  "description": "Public buyer routes and docs for Froggit, company memory for people and AI by Frowg Systems.",
   "repository": "https://github.com/SunFlash12/forge-cascade-mcp",
-  "homepage": "https://froggit.ai/buy",
+  "homepage": "https://froggit.ai/",
   "documentation": "https://froggit.ai/docs/agents",
   "api_reference": "https://froggit.ai/openapi.json",
   "manifest": "https://froggit.ai/.well-known/mcp.json",
