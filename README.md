@@ -1,10 +1,14 @@
-# Forge Cascade MCP
+# Froggit MCP Connector
 
-Public MCP connector for Forge Cascade enterprise AI memory buyer routes.
+Froggit is company memory for people and AI, by Frowg Systems. Access it through MCP, REST, and A2A.
 
-This repository exists so MCP directories and automated scanners can evaluate a
-public, no-secret server that points agents to Forge Cascade's public discovery,
-documentation, OpenAPI, pricing, and enterprise intake surfaces.
+This connector provides public access-plan links, documentation, pricing, and purchase recommendations based on buyer context. Its local stdio package returns public links through `forge_buyer_routes`, `forge_checkout_links`, and `forge_paid_route_for_context`. These routing tools do not search or store company memory. Use the product documentation for Froggit’s memory interfaces and their authentication and access requirements.
+
+Product: https://froggit.ai/
+Documentation: https://froggit.ai/docs/agents
+REST reference: https://froggit.ai/openapi.json
+Product MCP manifest: https://froggit.ai/.well-known/mcp.json
+Source repository: https://github.com/SunFlash12/forge-cascade-mcp
 
 ## Buyer And Reviewer Fast Path
 
