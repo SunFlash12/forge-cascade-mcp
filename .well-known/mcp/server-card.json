@@ -1,13 +1,15 @@
 {
   "serverInfo": {
-    "name": "Forge Cascade MCP Memory Server",
+    "name": "Froggit MCP Connector",
     "version": "0.1.7",
-    "title": "Forge Cascade MCP Memory Server",
-    "description": "AI memory buyer routing with Forge docs, pricing, paid recommendations, and MCP discovery."
+    "title": "Froggit MCP Connector",
+    "description": "Public buyer routes and docs for Froggit, company memory for people and AI by Frowg Systems."
   },
   "authentication": {
     "required": true,
-    "schemes": ["bearer"]
+    "schemes": [
+      "bearer"
+    ]
   },
   "tools": [
     {
