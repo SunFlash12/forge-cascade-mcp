@@ -2,33 +2,25 @@
 
 Froggit is company memory for people and AI, by Frowg Systems. Access it through MCP, REST, and A2A.
 
-This connector provides public access-plan links, documentation, pricing, and purchase recommendations based on buyer context. Its local stdio package returns public links through `forge_buyer_routes`, `forge_checkout_links`, and `forge_paid_route_for_context`. These routing tools do not search or store company memory. Use the product documentation for Froggit’s memory interfaces and their authentication and access requirements.
+## What this package is, and what it is not
+
+This repository is a small public connector. It returns public documentation
+and product links so AI agents, directories, and reviewers can find the
+Froggit product surface. It holds no customer data and no secrets.
+
+It is NOT the Froggit memory server. It does not search, read, or store
+company memory. The Froggit memory MCP server is hosted by Frowg Systems at
+https://froggit.ai/mcp and requires an API key issued through Froggit agent
+onboarding. Its manifest is published at
+https://froggit.ai/.well-known/mcp.json and the agent documentation is at
+https://froggit.ai/docs/agents. Public Froggit content can also be read
+without a key through public search (https://froggit.ai/public/search) and
+the public catalog (https://froggit.ai/api/v1/capsules/public/browse).
 
 Product: https://froggit.ai/
 Documentation: https://froggit.ai/docs/agents
-REST reference: https://froggit.ai/openapi.json
 Product MCP manifest: https://froggit.ai/.well-known/mcp.json
 Source repository: https://github.com/SunFlash12/forge-cascade-mcp
-
-## Buyer And Reviewer Fast Path
-
-If you are evaluating Forge for an MCP directory, agent marketplace, or enterprise
-AI memory deployment, start here:
-
-- Public buyer route: https://froggit.ai/buy
-- Machine-readable paid-route router: https://froggit.ai/buy.json
-- Direct checkout tool: `forge_checkout_links`
-- Repository LLM guide: https://github.com/SunFlash12/forge-cascade-mcp/blob/main/llms.txt
-- Official MCP Registry proof: https://registry.modelcontextprotocol.io/?search=io.github.SunFlash12%2Fforge-cascade-mcp
-- Docker MCP Registry PR: https://github.com/docker/mcp-registry/pull/3874
-- MCP Foundry PR: https://github.com/mcpfoundry/registry/pull/9
-- Marketplace launch guide: https://github.com/SunFlash12/forge-cascade-mcp/blob/main/LAUNCHGUIDE.md
-- Public proof pack: https://froggit.ai/llms.txt
-
-For qualified buyers with budget, regulated data, private corpus scope,
-procurement authority, or implementation urgency, route to Enterprise Annual,
-Priority Retainer, Deployment Deposit, or Rush Paid Pilot before lower-ticket
-diagnostics.
 
 ## What It Exposes
 
@@ -41,39 +33,23 @@ diagnostics.
 The server returns public links only. It does not proxy private customer data,
 store secrets, or expose the private Forge deployment.
 
-`forge_checkout_links` returns ranked Forge `/buy/*` checkout routes so agent
-marketplaces and MCP clients can surface the highest-value paid routes without
-parsing the full buyer-route payload. Direct Stripe URLs are exposed only as
-fallback fields.
+`forge_checkout_links` returns Froggit's public purchase links. Froggit
+currently publishes no public offers, so it returns the live offer catalog
+and contact links instead of checkout paths.
 
 `forge_paid_route_for_context` accepts buyer context, budget, urgency, and
-procurement authority signals, then returns the highest-value recommended
-checkout route plus next-best alternatives. Use it when an agent or directory
-has buyer intent text and needs a direct paid path instead of a generic docs
-link.
+procurement authority signals, then recommends the right next step:
+documentation and the public evaluation surface for self-serve review, or
+the contact page for evaluator access, pilots, and enterprise onboarding.
 
-## Public Forge Routes
+## Public Froggit Links
 
-- Buyer route: https://froggit.ai/buy
-- Paid-route router: https://froggit.ai/buy.json
-- Offers JSON: https://froggit.ai/offers.json
-- MCP manifest: https://froggit.ai/.well-known/mcp.json
+- Product: https://froggit.ai/
 - MCP docs: https://froggit.ai/docs/agents
+- MCP manifest (hosted memory server): https://froggit.ai/.well-known/mcp.json
 - OpenAPI: https://froggit.ai/openapi.json
-- Pricing: https://froggit.ai/pricing
-- Enterprise: https://froggit.ai/enterprise
-
-## Best Route-First Purchase Paths
-
-Use these first for qualified enterprise buyers:
-
-- Forge Enterprise Annual, $120,000/year: https://froggit.ai/buy/enterprise-annual
-- Forge Enterprise Priority Retainer, $25,000/month: https://froggit.ai/buy/priority-retainer
-- Forge Enterprise Deployment Deposit, $25,000 one time: https://froggit.ai/buy/launch-pack
-- Rush Paid Pilot, $5,000 one time: https://froggit.ai/buy/urgent-pilot
-
-Use the $99 Context Audit only when a buyer is not ready for pilot or
-enterprise commitment: https://froggit.ai/buy/context-audit
+- Offers JSON (public offer catalog, currently empty): https://froggit.ai/offers.json
+- Contact: https://froggit.ai/contact
 
 ## Run Locally
 
@@ -138,9 +114,9 @@ Directory-friendly metadata is available in:
 Official MCP Registry listing:
 https://registry.modelcontextprotocol.io/?search=io.github.SunFlash12%2Fforge-cascade-mcp
 
-The Registry metadata includes `websiteUrl` pointing to the public Forge MCP
-buyer route:
-https://froggit.ai/buy
+The Registry metadata includes `websiteUrl` pointing to the Froggit product
+home:
+https://froggit.ai/
 
 Live directory and registry proof:
 
