@@ -3,7 +3,7 @@
     "name": "Froggit MCP Connector",
     "version": "0.1.7",
     "title": "Froggit MCP Connector",
-    "description": "Public buyer routes and docs for Froggit, company memory for people and AI by Frowg Systems."
+    "description": "Public documentation and product links for Froggit, company memory for people and AI by Frowg Systems. This connector is not the Froggit memory server."
   },
   "authentication": {
     "required": true,
@@ -14,7 +14,7 @@
   "tools": [
     {
       "name": "forge_buyer_routes",
-      "description": "Return public Forge Cascade MCP buyer, docs, OpenAPI, pricing, enterprise, and checkout-discovery routes.",
+      "description": "Return public Froggit documentation, product, and catalog links.",
       "inputSchema": {
         "type": "object",
         "properties": {}
@@ -22,7 +22,7 @@
     },
     {
       "name": "forge_checkout_links",
-      "description": "Return ranked Forge route-first checkout links for qualified enterprise AI memory, private RAG, and MCP buyers.",
+      "description": "Return Froggit's public purchase links. Froggit currently publishes no public offers, so this returns the live offer catalog and contact links.",
       "inputSchema": {
         "type": "object",
         "properties": {}
@@ -30,7 +30,7 @@
     },
     {
       "name": "forge_paid_route_for_context",
-      "description": "Recommend the highest-value Forge checkout route from buyer context, budget, urgency, and procurement authority signals.",
+      "description": "Recommend the right Froggit next step (documentation, the public evaluation surface, or sales contact) from buyer context, budget, urgency, and procurement authority signals.",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -58,7 +58,7 @@
     {
       "uri": "forge://buyer-routes",
       "name": "Forge buyer routes",
-      "description": "Public Forge buyer routes, direct purchase paths, and agent routing rules.",
+      "description": "Public Froggit documentation and product links.",
       "mimeType": "application/json"
     }
   ],
