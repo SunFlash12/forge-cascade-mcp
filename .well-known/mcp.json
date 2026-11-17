@@ -1,7 +1,7 @@
 {
   "name": "Froggit MCP Connector",
   "slug": "forge-cascade-mcp-memory-server",
-  "description": "Public buyer routes and docs for Froggit, company memory for people and AI by Frowg Systems.",
+  "description": "Public docs and links for Froggit; not the memory server (hosted MCP: froggit.ai/mcp).",
   "repository": "https://github.com/SunFlash12/forge-cascade-mcp",
   "homepage": "https://froggit.ai/",
   "documentation": "https://froggit.ai/docs/agents",
@@ -10,11 +10,7 @@
   "server_card": "https://raw.githubusercontent.com/SunFlash12/forge-cascade-mcp/main/.well-known/mcp/server-card.json",
   "well_known_server_json": "https://raw.githubusercontent.com/SunFlash12/forge-cascade-mcp/main/.well-known/mcp/server.json",
   "smithery_config": "https://raw.githubusercontent.com/SunFlash12/forge-cascade-mcp/main/smithery.yaml",
-  "pricing": "https://froggit.ai/pricing",
-  "enterprise": "https://froggit.ai/enterprise",
-  "paid_access_router": "https://froggit.ai/buy.json",
   "offers": "https://froggit.ai/offers.json",
-  "recommended_checkout": "https://froggit.ai/buy/enterprise-annual",
   "category": "RAG & Knowledge",
   "language": "Python",
   "transport": "stdio",
@@ -32,8 +28,17 @@
     ]
   },
   "capabilities": {
-    "tools": ["forge_buyer_routes", "forge_checkout_links", "forge_paid_route_for_context"],
-    "resources": ["forge://buyer-routes"],
-    "prompts": ["assess_mcp_memory_fit"]
-  }
+    "tools": [
+      "forge_buyer_routes",
+      "forge_checkout_links",
+      "forge_paid_route_for_context"
+    ],
+    "resources": [
+      "forge://buyer-routes"
+    ],
+    "prompts": [
+      "assess_mcp_memory_fit"
+    ]
+  },
+  "contact": "https://froggit.ai/contact"
 }
