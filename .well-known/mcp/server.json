@@ -2,7 +2,7 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.SunFlash12/forge-cascade-mcp",
   "title": "Froggit MCP Connector",
-  "description": "Public buyer routes and docs for Froggit, company memory for people and AI by Frowg Systems.",
+  "description": "Public docs and links for Froggit; not the memory server (hosted MCP: froggit.ai/mcp).",
   "version": "0.1.7",
   "websiteUrl": "https://froggit.ai/",
   "repository": {
